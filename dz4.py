@@ -30,14 +30,14 @@ class Student:
         print("I need money")
         self.moneydollar += 300
         self.gladness -= 4
-        self.progress -= 0.07
+        self.progress -= 0.7
         self.physicalform += 1
 
     def to_meeting_friends(self): #студент гуляет с друзьями,девушкой или родственниками
         print("I want fun")
         self.moneydollar -= 130
         self.gladness += 2
-        self.progress -= 0.04
+        self.progress -= 0.4
     
     def to_physical_form(self): #студент занимается спортом
         print("I go to the gym")
@@ -75,7 +75,7 @@ class Student:
         print(f"Physical form = {self.physicalform}")
     
     def live(self, day):
-        day = "Day " + str(day) + "of " + self.name + "life "
+        day = "Day " + str(day) + "of " + self.name + " life"
         print(f"{day:=^50}")
         live_cube = random.randint(1,7)
         if live_cube == 1:
