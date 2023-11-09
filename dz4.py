@@ -13,7 +13,7 @@ class Student:
         print("Time to study")
         self.progress += 0.12
         self.gladness -= 5
-        self.physicalform -= 3
+        self.physicalform -= 2
 
     def to_sleep(self):
         print("I will sleep")
@@ -28,10 +28,10 @@ class Student:
 
     def to_money(self): #заработок денег 
         print("I need money")
-        self.moneydollar += 300
+        self.moneydollar += 400
         self.gladness -= 4
         self.progress -= 0.7
-        self.physicalform += 1
+        self.physicalform += 2
 
     def to_meeting_friends(self): #студент гуляет с друзьями,девушкой или родственниками
         print("I want fun")
@@ -55,6 +55,7 @@ class Student:
     def is_alive(self):
         if self.progress < -0.5:
             print("Cast out...")
+            self.alive = False
         elif self.gladness <= 0:
             print("Depression...")
             self.alive = False
